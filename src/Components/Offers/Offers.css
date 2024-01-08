@@ -1,6 +1,6 @@
 .offers{
     width: 65%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     margin: auto;
     padding: 0px 140px;
@@ -34,7 +34,7 @@
     color: white;
     font-size: 22px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 0px;
     cursor: pointer;
 }
 .offers-right{

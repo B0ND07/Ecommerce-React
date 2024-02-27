@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Shop from "./Components/Pages/Shop";
@@ -11,7 +10,7 @@ import men_banner from "./Components/Assets/banner_mens.png"
 import women_banner from "./Components/Assets/banner_women.png"
 import kids_banner from "./Components/Assets/banner_kids.png"
 
-const Ecommerce = () => {
+const App = () => {
   return (
     <div>
       <BrowserRouter>
@@ -32,4 +31,4 @@ const Ecommerce = () => {
   );
 };
 
-export default Ecommerce;
+export default App;

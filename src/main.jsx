@@ -1,13 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Ecommerce from "./Ecommerce.jsx";
-import "../index.css";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+
+import App from "./App.jsx";
+import './index.css'
 import ShopContextProvider from "./Components/Context/ShopContext.jsx";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ShopContextProvider>
-    <Ecommerce />
+    <App />
     </ShopContextProvider>
-  </React.StrictMode>
-);
+  </React.StrictMode>,
+)

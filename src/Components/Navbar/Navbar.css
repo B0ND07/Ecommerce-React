@@ -47,20 +47,20 @@
     gap: 45px;
 }
 .nav-login-cart button{
-    width: 157px;
-    height: 58px;
+    width: 90px;
+    height: 42px;
     outline: none;
     border: 1px solid grey;
     border-radius: 76px;
-    color: grey;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 500;
-    background: rgb(255, 255, 255);
+    background: rgb(241, 38, 38);
     cursor: pointer;
 
 }
 .nav-login-cart button:active{
-    background: rgb(194, 191, 191);
+    background: rgb(197, 28, 28);
 }
 .nav-cart-count{
     width: 22px;

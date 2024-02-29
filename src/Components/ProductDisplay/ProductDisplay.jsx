@@ -3,10 +3,24 @@ import "./ProductDisplay.css";
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import { ShopContext } from "../../Context/ShopContext";
+import { AuthContext } from "../../Context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const ProductDisplay = (props) => {
+  const navigate=useNavigate()
+  const { user } = useContext(AuthContext);
   const { product } = props;
   const { addToCart } = useContext(ShopContext);
+  const handleCart=async()=>{
+    if(user?.email){
+      addToCart(product);
+    }else{
+      navigate("/login")
+    }
+
+     
+   
+  }
   return (
     <div className="productdisplay">
       <div className="productdisplayleft">
@@ -54,9 +68,7 @@ const ProductDisplay = (props) => {
           </div>
         </div>
         <button
-          onClick={() => {
-            addToCart(product);
-          }}
+          onClick={handleCart}
         >
           Add to cart
         </button>

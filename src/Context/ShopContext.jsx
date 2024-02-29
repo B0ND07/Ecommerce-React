@@ -3,12 +3,14 @@ import all_product from "../Components/Assets/all_product";
 import {  doc,  setDoc, updateDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { AuthContext } from "./AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export const ShopContext = createContext(null);
 
 
 const ShopContextProvider = (props) => {
   const { user } = useContext(AuthContext);
+ 
 
   const [cartItems, setCartItems] = useState([]); 
 

@@ -8,17 +8,17 @@
     margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg,wheat 0%,grey 60%);
+    background: linear-gradient(180deg,rgb(209, 27, 27) 0%,rgb(0, 0, 0) 60%);
     gap: 30px;
 }
 
 .newsletter h1{
-    color: grey;
+    color: rgb(255, 255, 255);
     font-size: 55px;
     font-weight: 600;
 }
 .newsletter p{
-    color: rgb(184, 57, 57);
+    color: rgb(251, 255, 18);
     font-size: 20px;
 }
 
